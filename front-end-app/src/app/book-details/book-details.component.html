@@ -1,0 +1,32 @@
+<h2>Book Details</h2> 
+<br>
+
+<div class="table-responsive">
+  <table class="table table-sm">
+    <thead>
+      <tr class="bg-info">
+        <th scope="col" >Id</th>
+        <th scope="col" >Title</th>
+        <th scope="col" >Author</th>
+        <th scope="col">Genre</th>
+        <th scope="col" >Pages</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="book">
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.genre }}</td>
+        <td>{{ book.pages }}</td>
+        <td>{{ book.price }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+

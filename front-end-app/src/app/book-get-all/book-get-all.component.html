@@ -1,0 +1,29 @@
+<h2>Book List</h2>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead class="bg-info">
+            <tr>
+                <th scope="col" >TITLE</th>
+                <th scope="col" >AUTHOR</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let book of books; trackBy: trackById">
+            <tr scope="row">
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>
+                    <span>
+                        <button type="button" class="btn btn-outline-info" (click)="delete(book)"> DELETE </button>
+                    </span>
+                    <span>
+                        <button type="button" class="btn btn-outline-info" style="margin-left: 15px;"   [routerLink]="['details/', book.id]"> DETAILS</button>
+                    </span> 
+                </td>
+            </tr>
+        </tbody>    
+    </table>
+</div>
+
+<br>
+<button type="button" class="btn btn-outline-info" (click)="load()">LOAD BOOKS</button>
