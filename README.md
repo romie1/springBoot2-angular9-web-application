@@ -8,7 +8,7 @@ Back end application is a RESTful web services using Spring Boot 2. It performs 
 - update a book
 - delete a book
 
-# Technologies used
+# Back End Technologies used
 - Java 8
 - Spring Boot 2.3.3
 - Spring Data JPA
@@ -17,9 +17,7 @@ Back end application is a RESTful web services using Spring Boot 2. It performs 
 - Tomcat 9
 - Oracle 11g
 
-Front end application is an Angular 9 application.
-
-# Technologies used
+# Front End Technologies used
 - Angular 9
 - Angular CLI
 - Bootstrap
