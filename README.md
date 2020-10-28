@@ -1,5 +1,5 @@
 # Spring boot 2 + Angular 9 CRUD Web Application
-This is a complete web application with a connectivity to Oracle database. We have used spring data to connect to the database and perform CRUD operation.
+This is a complete web application with a connectivity to Oracle database.I used spring data to connect to the database and perform CRUD operation.
 This project is a Book Management System, using Spring Boot 2 and Angular 9.
 
 Back end application is a RESTful web services using Spring Boot 2. It performs all the CRUD operations:
