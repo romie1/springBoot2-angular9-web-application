@@ -1,0 +1,22 @@
+#content{
+	display: block;
+	width: 960px;
+	margin-top: 15px;
+	float: left;
+	background-color: #fff;
+	border-radius: 10px;
+	border:6px solid #1C478E;
+    padding: 15px;
+    font-size: 15px;
+    
+}
+
+.img-float-spring{
+    width: 20%;
+    float: right;
+}
+.img-float-angular{
+    width: 20%;
+    float: right;
+    
+}

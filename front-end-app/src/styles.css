@@ -1,8 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-margin-left: 20%;
-margin-right:20%;
+*{
+	margin: 0 auto 0 auto;
+	text-align: left;
 }
-body, input[text], button { 
-    font-family: Cambria, Georgia; 
-  }
+
+body{
+	margin:0;
+	padding: 0;
+	text-align: left;
+	font-size: 13px;
+  font-family: arial, helvetica;
+  float: both;
+}
+
+h1{
+	margin: 20px 0 20px 0;
+	text-align: center;
+	font-weight:bold;
+}
+
+header h1 span.blue-text{
+	color:  #5bc0de;
+}
+
+h2{
+	  font-family: arial, helvetica;
+    font-weight:bold;
+    margin-top: 50px;
+    
+}
+
+
+

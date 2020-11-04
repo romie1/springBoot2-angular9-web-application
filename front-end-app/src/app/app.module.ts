@@ -14,7 +14,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './home/home.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { AboutComponent } from './about/about.component';
-import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { NavbarComponent } from './navbar/navbar.component'
     PageNotFoundComponent,
     HomeComponent,
     BookDetailsComponent,
-    AboutComponent,
-    NavbarComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,

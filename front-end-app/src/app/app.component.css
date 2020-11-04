@@ -1,0 +1,55 @@
+#container{
+	width:960px;
+	font-family: arial, helvetica;
+}
+
+#menu {
+	display:block;
+	float: left;
+	clear: both;
+	width: 960px;
+	height: 40px;
+	background: #5bc0de;
+	border-radius: 5px;
+}
+
+#menu ul{
+	list-style: none;
+	padding: 0;
+	margin-left: auto;
+	width: 960px;
+	padding-top: 10px;
+}
+
+#menu li{
+	list-style: none;
+	padding: 0px;
+	display: inline;
+}
+
+#menu li a, #menu li a:visited{
+	float: left;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0 13px 0 13px;
+}
+
+footer{
+	display:block;
+	float: left;
+	clear: both;
+	width: 960px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #ffffff;
+	
+	margin:30px;
+	margin-left:287px;
+	padding: 5px 0 10px 0;
+	border-radius: 5px;
+}
+

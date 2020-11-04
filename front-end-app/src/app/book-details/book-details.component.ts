@@ -25,4 +25,8 @@ export class BookDetailsComponent implements OnInit {
     );
   }
 
+  goBack(){
+    this.router.navigate(['../../'], { relativeTo: this.route });
+  }
+
 }

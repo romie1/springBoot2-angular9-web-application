@@ -1,8 +1,29 @@
-<div style="text-align: center;">
-  <h1>{{title}}</h1>
-  <h3>{{subtitle}}</h3>
+<div id="container">
+  <header>
+    <h1> <span class="text-info">BOOK</span> MANAGEMENT SYSTEM</h1>
+  </header>
+  <nav id="menu" class="bg-info">
+    <ul>
+      <li>
+        <a routerLink="" routerLinkActive="active">HOME</a>
+      </li>
+      <li>
+        <a routerLink="about" routerLinkActive="active">ABOUT</a>
+      </li>
+      <li>
+        <a routerLink="books" routerLinkActive="active" >BOOKS</a>
+      </li>
+      <li>
+        <a routerLink="save" routerLinkActive="active" >ADD BOOK</a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<app-navbar></app-navbar>
-<div>
-  <router-outlet></router-outlet>
-</div>
+<div style="clear: both"></div>
+<footer  class="bg-info">
+		Copyright &copy; 2020, Romielyn Casio
+</footer>

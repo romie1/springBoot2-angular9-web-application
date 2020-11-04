@@ -1,10 +1,10 @@
-<h2>Book List</h2>
+<h2></h2>
 <div class="table-responsive">
     <table class="table table-hover">
-        <thead class="bg-info">
+        <thead>
             <tr>
-                <th scope="col" >TITLE</th>
-                <th scope="col" >AUTHOR</th>
+                <th scope="col" class="text-info">Title</th>
+                <th scope="col" class="text-info">Author</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -14,11 +14,14 @@
                 <td>{{ book.author }}</td>
                 <td>
                     <span>
-                        <button type="button" class="btn btn-outline-info" (click)="delete(book)"> DELETE </button>
+                        <button type="button" class="btn btn-outline-info"    [routerLink]="['details/', book.id]"> DETAILS</button>
                     </span>
                     <span>
-                        <button type="button" class="btn btn-outline-info" style="margin-left: 15px;"   [routerLink]="['details/', book.id]"> DETAILS</button>
-                    </span> 
+                        <button type="button" class="btn btn-outline-info" style="margin-left: 20px;"> UPDATE</button>
+                    </span>
+                    <span>
+                        <button type="button" class="btn btn-outline-info" (click)="delete(book)" style="margin-left: 20px;"> DELETE </button>
+                    </span>                     
                 </td>
             </tr>
         </tbody>    
