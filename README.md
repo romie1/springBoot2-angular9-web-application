@@ -24,7 +24,7 @@ Back end application is a RESTful web services using Spring Boot 2. It performs 
 
 # 5 End Points
 - GET /books
-- GET /books//{bookid}
+- GET /books/{bookid}
 - POST /books
 - PUT /books/{bookid}
 - DELETE /books/{bookid}
