@@ -29,6 +29,6 @@ export class BookService {
   }
 
   public update(id:number, book: Book): Observable<Book> {
-    return this.http.patch<Book>(this.url + '/' + id, JSON.stringify(book));
+    return this.http.put<Book>(this.url + '/' + id, book);
   }
 }

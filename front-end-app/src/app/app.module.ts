@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './home/home.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { AboutComponent } from './about/about.component';
+import { BookUpdateComponent } from './book-update/book-update.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutComponent } from './about/about.component';
     PageNotFoundComponent,
     HomeComponent,
     BookDetailsComponent,
-    AboutComponent
+    AboutComponent,
+    BookUpdateComponent
   ],
   imports: [
     BrowserModule,

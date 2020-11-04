@@ -1,20 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-not-found',
   template: `
-  <p style="color:red"> <b> 
+  <h1 style="color:red; align:center; margin-top:30px"> <b> 
     PAGE NOT FOUND!!!!
   </b>  
-  </p>
+  </h1>
+  <br>
+  <button type="button" class="btn btn-outline-info" (click)="goBack()">Back</button>
   `,
   styles: []
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+  }
+
+  goBack(){
+    this.router.navigate([''], { relativeTo: this.route });
   }
 
 }

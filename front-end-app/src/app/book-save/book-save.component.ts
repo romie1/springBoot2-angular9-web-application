@@ -12,10 +12,10 @@ import { Router } from '@angular/router';
 export class BookSaveComponent implements OnInit {
 
   formBook: FormGroup;
-  book = new Book(0,'','','',0,0);
+  book = new Book();
 
   constructor(formBuilder: FormBuilder, private bookService: BookService,  private router: Router) {
-    this.formBook = formBuilder.group(new Book(0,'','','',0,0));
+    this.formBook = formBuilder.group(new Book());
    }
 
   ngOnInit(): void {
@@ -24,7 +24,7 @@ export class BookSaveComponent implements OnInit {
   save(){
     this.bookService.save(this.formBook.value).subscribe(
         response => {console.log('done', response),
-                      this.book = new Book(0,'','','',0,0);
+                      this.book = new Book();
                       this.gotoList();
         },
         error => console.log('error', error)

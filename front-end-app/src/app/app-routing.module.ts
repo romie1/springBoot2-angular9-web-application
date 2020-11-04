@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BookSaveComponent } from './book-save/book-save.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { AboutComponent } from './about/about.component';
+import { BookUpdateComponent } from './book-update/book-update.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'books', component: BookGetAllComponent },
   { path: 'save', component: BookSaveComponent },
   { path: 'books/details/:id', component: BookDetailsComponent },
+  { path: 'books/update/:id', component: BookUpdateComponent },
   { path: "**", component: PageNotFoundComponent}
 ];
 
@@ -24,4 +26,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [HomeComponent, BookGetAllComponent, 
                                   BookSaveComponent, BookDetailsComponent, 
-                                  PageNotFoundComponent, AboutComponent];
+                                  PageNotFoundComponent, AboutComponent,
+                                  BookUpdateComponent];

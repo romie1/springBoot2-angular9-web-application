@@ -1,5 +1,4 @@
-#content{
-	display: block;
+ #content{
 	width: 960px;
 	margin-top: 15px;
 	float: left;
@@ -7,7 +6,7 @@
 	border-radius: 10px;
 	border:6px solid #1C478E;
     padding: 15px;
-    font-size: 15px;
+	font-size: 15px;
     
 }
 

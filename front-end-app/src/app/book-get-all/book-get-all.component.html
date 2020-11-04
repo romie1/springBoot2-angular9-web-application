@@ -17,7 +17,7 @@
                         <button type="button" class="btn btn-outline-info"    [routerLink]="['details/', book.id]"> DETAILS</button>
                     </span>
                     <span>
-                        <button type="button" class="btn btn-outline-info" style="margin-left: 20px;"> UPDATE</button>
+                        <button type="button" class="btn btn-outline-info" [routerLink]="['update/', book.id]" style="margin-left: 20px;"> UPDATE</button>
                     </span>
                     <span>
                         <button type="button" class="btn btn-outline-info" (click)="delete(book)" style="margin-left: 20px;"> DELETE </button>

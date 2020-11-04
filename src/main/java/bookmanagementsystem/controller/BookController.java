@@ -45,7 +45,7 @@ public class BookController {
 	}
 
 	@PutMapping("/books/{id}")
-	public Book updateBook2(@RequestBody Book newBook, @PathVariable long id) {
+	public Book updateBook2(@PathVariable long id, @RequestBody Book newBook) {
 		return bookRepository.findById(id).map(book -> {
 			book.setAuthor(newBook.getAuthor());
 			book.setTitle(newBook.getTitle());
@@ -61,7 +61,7 @@ public class BookController {
 	}
 
 	@PatchMapping("/books/{id}")
-	public Book updateBook(@RequestBody Book newBook, @PathVariable long id) {
+	public Book updateBook(@PathVariable long id, @RequestBody Book newBook ) {
 		LOG.trace(String.format("patch coder %d by %s", id, newBook));
 		return bookRepository.findById(id).map(book -> {
 			if (newBook.getAuthor() != null) {
