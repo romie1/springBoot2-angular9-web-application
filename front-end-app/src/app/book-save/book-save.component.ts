@@ -15,7 +15,7 @@ export class BookSaveComponent implements OnInit {
   book = new Book();
 
   constructor(formBuilder: FormBuilder, private bookService: BookService,  private router: Router) {
-    this.formBook = formBuilder.group(new Book());
+    this.formBook = formBuilder.group({id:0, author:'', title:'', genre:'Travel', pages:0, price:0});
    }
 
   ngOnInit(): void {
@@ -24,7 +24,7 @@ export class BookSaveComponent implements OnInit {
   save(){
     this.bookService.save(this.formBook.value).subscribe(
         response => {console.log('done', response),
-                      this.book = new Book();
+                      this.book = this.formBook.value;
                       this.gotoList();
         },
         error => console.log('error', error)
